@@ -1,0 +1,84 @@
+/* Colours */
+
+:root {
+    --body-color: hsl(0, 0%, 8%);
+    --button-color: hsl(0, 0%, 20%);
+    --card-color: hsl(0, 0%, 12%);
+    --green-color: hsl(75, 94%, 57%);
+    --white-color: hsl(0, 0%, 100%);
+}
+
+/* Typography */
+    html {
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+        font-size: 62.5%;
+    }
+
+/* Body  */
+    body {
+        background-color: var(--body-color);
+        
+    }
+
+/* Card */
+.card {
+    background-color: var(--card-color);
+    border-radius: 1.2rem;
+    margin: 11.65rem auto;
+    padding: 2.4rem 0;
+    text-align: center;
+    width: 32.7rem;
+}
+
+.card .profile_pic {
+    border-radius: 50%;
+    margin-bottom: 2.4rem;
+    width: 8.8rem;
+}
+
+ .card .title {
+        color: var(--white-color);
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .card .profile_location {
+        color: var(--green-color);
+        font-weight: 600;
+        margin: 1rem 0 0 0;
+    }
+
+    .card .about_me {
+        color: var(--white-color);
+        font-size: 1.4rem;
+        margin: 2.4rem 0;
+    }
+
+/* Buttons */
+.btn-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+    .card .btn {
+        background-color: var(--button-color);
+        border-radius: 0.8rem;
+        border: 0;
+        display: block;
+        height: 4.5rem;
+        width: 27.9rem;
+    }
+
+.card .btn:not(:last-child){
+    margin-bottom: 1.6rem;
+}
+
+    .btn > .link {
+        color: var(--white-color);
+        font-family: "Inter", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
